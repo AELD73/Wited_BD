@@ -1,0 +1,22 @@
+<header class="header-wited">
+  <div class="header-container">
+    <div class="logo">
+      <img src="<%=request.getContextPath()%>/img/logo.png" alt="Logo">
+    </div>
+    <div class="header-center">
+      <h1 class="title">Plataforma de Aprendizaje WITED</h1>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="http://www.instructores.azc.uam.mx">Principal</a></li>
+        <li><a href="http://www.instructores.azc.uam.mx/mision.html">Misión</a></li>
+        <li><a href="http://www.instructores.azc.uam.mx/vision.html">Visión</a></li>
+        <li><a href="http://www.instructores.azc.uam.mx/casosexito.html">Casos de éxito</a></li>
+        <li><a href="http://www.instructores.azc.uam.mx/contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bar-image">
+    <img src="<%=request.getContextPath()%>/img/bar.png" alt="Barra decorativa">
+  </div>
+</header>

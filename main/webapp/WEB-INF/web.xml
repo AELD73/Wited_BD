@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>proyectoWited</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<filter>
+		<description>Filtro Sitemesh</description>
+		<display-name>PageFilter</display-name>
+		<filter-name>PageFilter</filter-name>
+		<filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PageFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/TestDS</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	<servlet>
+		<description>description</description>
+		<display-name>UpdateServlet</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Servlet prar consultar tabla cursos</description>
+		<display-name>UpdateForm</display-name>
+		<servlet-name>UpdateForm</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.UpdateFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateForm</servlet-name>
+		<url-pattern>/UpdateForm</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar Cursos</description>
+		<display-name>CursoForm</display-name>
+		<servlet-name>CursoForm</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.CursoFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CursoForm</servlet-name>
+		<url-pattern>/CursoForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>Consultar Alumno</description>
+		<display-name>AlumnoForm</display-name>
+		<servlet-name>AlumnoForm</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.AlumnoFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlumnoForm</servlet-name>
+		<url-pattern>/AlumnoForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>Consultar Alumno</description>
+		<display-name>ExamenForm</display-name>
+		<servlet-name>ExamenForm</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.ExamenFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExamenForm</servlet-name>
+		<url-pattern>/ExamenForm</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar XLS Curso</description>
+		<display-name>CursoFormXls</display-name>
+		<servlet-name>CursoFormXls</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.CursoFormXlsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CursoFormXls</servlet-name>
+		<url-pattern>/CursoFormXls</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar XLS Alumno</description>
+		<display-name>AlumnoFormXls</display-name>
+		<servlet-name>AlumnoFormXls</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.AlumnoFormXlsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlumnoFormXls</servlet-name>
+		<url-pattern>/AlumnoFormXls</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar XLS Examen</description>
+		<display-name>ExamenFormXls</display-name>
+		<servlet-name>ExamenFormXls</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.ExamenFormXlsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExamenFormXls</servlet-name>
+		<url-pattern>/ExamenFormXls</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar PDF</description>
+		<display-name>CursoFormPdf</display-name>
+		<servlet-name>CursoFormPdf</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.CursoFormPdfServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CursoFormPdf</servlet-name>
+		<url-pattern>/CursoFormPdf</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>Reporte Alumno PDF</description>
+		<display-name>AlumnoFormPdf</display-name>
+		<servlet-name>AlumnoFormPdf</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.AlumnoFormPdfServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlumnoFormPdf</servlet-name>
+		<url-pattern>/AlumnoFormPdf</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>Consultar HTML</description>
+		<display-name>CursoFormHTML</display-name>
+		<servlet-name>CursoFormHTML</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.CursoFormHTMLServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CursoFormHTML</servlet-name>
+		<url-pattern>/CursoFormHTML</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>description</description>
+		<display-name>UpdateServletAlumno</display-name>
+		<servlet-name>UpdateServletAlumno</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.UpdateServletAlumno</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAlumno</servlet-name>
+		<url-pattern>/UpdateAlumno</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>Update Examen</description>
+		<display-name>UpdateServletExamen</display-name>
+		<servlet-name>UpdateServletExamen</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.UpdateServletExamen</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateExamen</servlet-name>
+		<url-pattern>/UpdateExamen</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description>Update Institucion</description>
+		<display-name>UpdateServletInstitucion</display-name>
+		<servlet-name>UpdateServletInstitucion</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.UpdateServletInstitucion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateInstitucion</servlet-name>
+		<url-pattern>/UpdateInstitucion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Consultar Institucion</description>
+		<display-name>InstitucionForm</display-name>
+		<servlet-name>InstitucionForm</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.InstitucionFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InstitucionForm</servlet-name>
+		<url-pattern>/InstitucionForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Consultar XLS Institucion</description>
+		<display-name>InstitucionFormXls</display-name>
+		<servlet-name>InstitucionFormXls</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.InstitucionFormXlsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InstitucionFormXls</servlet-name>
+		<url-pattern>/InstitucionFormXls</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>Consultar PDF</description>
+		<display-name>InstitucionFormPdf</display-name>
+		<servlet-name>InstitucionFormPdf</servlet-name>
+		<servlet-class>mx.uam.azc.comunidad00.Wited.controller.InstitucionFormPdfServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InstitucionFormPdf</servlet-name>
+		<url-pattern>/InstitucionFormPdf</url-pattern>
+	</servlet-mapping>
+</web-app> 

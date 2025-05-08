@@ -1,0 +1,10 @@
+<footer class="footer-wited">
+  <div class="footer-bar">
+    <img src="<%=request.getContextPath()%>/img/bar.png" alt="Separador" class="bar-img">
+  </div>
+
+  <div class="footer-legal">
+    <p>&copy; EQUIPO LINTERNAS NEGRAS</p>
+    <p>Derechos Reservados</p>
+  </div>
+</footer>

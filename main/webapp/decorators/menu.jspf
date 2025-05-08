@@ -1,0 +1,18 @@
+<header class="header-logout">
+  <div class="logout-container">
+    
+    
+    <a href="<%=request.getContextPath()%>/alumno_update_form.jsp" class="logout-link">Alumno</a>
+    <a href="<%=request.getContextPath()%>/alumno_search.jsp" class="logout-link">Reporte Alumno</a>
+    <a href="<%=request.getContextPath()%>/cursos_update_form.jsp" class="logout-link">Curso</a>
+    <a href="<%=request.getContextPath()%>/curso_search.jsp" class="logout-link">Reporte Curso</a>
+    <a href="<%=request.getContextPath()%>/examen_update_form.jsp" class="logout-link">Examen</a>
+    <a href="<%=request.getContextPath()%>/examen_search.jsp" class="logout-link">Reporte Examen</a>
+    <a href="<%=request.getContextPath()%>/institucion_update_form.jsp" class="logout-link">Institucion</a>
+    <a href="<%=request.getContextPath()%>/institucion_search.jsp" class="logout-link">Reporte Institución</a>
+    <a href="<%=request.getContextPath()%>/login.html" class="logout-link">Logout</a>
+    
+    
+    
+  </div>
+</header>
